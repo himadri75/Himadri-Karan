@@ -47,7 +47,7 @@ export const skillGroups = [
   },
   {
     title: "Frontend",
-    items: ["React", "Next.js", "Tailwind CSS", "Bootstrap"],
+    items: ["HTML, CSS & JS" ,"React", "Next.js", "Tailwind CSS", "Bootstrap"],
   },
   {
     title: "Tools & DevOps",
@@ -183,7 +183,7 @@ export const interests = [
   {
     title: "Real-time Distributed Systems",
     description:
-      "Exploring WebSockets, event-driven systems, Redis, and building low-latency real-time applications and dashboards.",
+      "Exploring WebSockets, event-driven systems, Kafka, Redis, and building low-latency real-time applications and dashboards.",
   },
   {
     title: "Applied AI Engineering",

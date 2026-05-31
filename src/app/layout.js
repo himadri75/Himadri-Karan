@@ -15,6 +15,11 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata = {
   title: "Himadri Karan",
   description: "Portfolio of Himadri Karan, CSE student.",
+  icons: {
+    icon: "/logo-h.png",
+    shortcut: "/logo-h.png",
+    apple: "/logo-h.png",
+  },
 };
 
 export default function RootLayout({ children }) {
