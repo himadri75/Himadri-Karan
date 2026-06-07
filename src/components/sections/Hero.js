@@ -3,7 +3,7 @@ import { profile, socialLinks } from "../../data/portfolio";
 
 export default function Hero() {
   return (
-    <section className="py-10">
+    <section id="home" className="py-10">
       <Container>
         <div className="grid gap-10 border border-[#d6dbe1] bg-white p-10 sm:grid-cols-[1.2fr_0.8fr]">
           <div className="flex flex-col gap-6">

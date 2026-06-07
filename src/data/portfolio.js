@@ -39,11 +39,11 @@ export const highlights = [
 export const skillGroups = [
   {
     title: "Languages",
-    items: ["Java", "JavaScript", "SQL", "Python"],
+    items: ["Java", "Node.js/TS", "SQL", "Python"],
   },
   {
     title: "Backend",
-    items: ["Spring Boot", "Spring Security", "REST APIs", "JWT", "PostgreSQL"],
+    items: ["Spring Boot", "Spring Security", "REST APIs", "PostgreSQL", "Express.js"],
   },
   {
     title: "Frontend",
@@ -51,7 +51,7 @@ export const skillGroups = [
   },
   {
     title: "Tools & DevOps",
-    items: ["Git", "GitHub", "Docker", "Postman", "Github Copilot"],
+    items: ["Git & GitHub", "Docker", "Postman", "Github Copilot"],
   },
 ];
 

@@ -4,6 +4,8 @@ import Image from "next/image";
 import Section from "../Section";
 import { projects } from "../../data/portfolio";
 import toast from "react-hot-toast";
+import Link from "next/link";
+import { FiArrowUpRight } from "react-icons/fi";
 
 export default function Projects() {
   const handleViewAllProjects = () => {
@@ -51,13 +53,16 @@ export default function Projects() {
 
               <div className="flex gap-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#0e1116]">
                 {project.links.map((link) => (
-                  <a
+                  <Link
                     key={link.label}
                     href={link.href}
-                    className="transition-colors hover:text-[#5d6672]"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-colors hover:text-[#5d6672] inline-flex items-center gap-1"
                   >
                     {link.label}
-                  </a>
+                    <FiArrowUpRight className="w-4 h-4" />
+                  </Link>
                 ))}
               </div>
             </div>
@@ -66,12 +71,12 @@ export default function Projects() {
 
         <div className="flex justify-center"
           onClick={handleViewAllProjects}>
-          <a
-            href="#"
-            className="inline-flex items-center justify-center border border-[#0e1116] bg-[#0e1116] px-5 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#f6f7f9] transition-colors hover:bg-[#0e1116]/90"
+          <div
+            // href="#"
+            className="inline-flex items-center justify-center border border-[#0e1116] bg-[#0e1116] px-5 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-[#f6f7f9] transition-colors hover:bg-[#0e1116]/90 cursor-default"
           >
             View All Projects
-          </a>
+          </div>
         </div>
       </div>
     </Section>
